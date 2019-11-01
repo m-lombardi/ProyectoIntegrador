@@ -2,5 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(https://i.pinimg.com/564x/ab/5f/7d/ab5f7db14a93af8d760a0049850d4f6a.jpg);
+  background-image: url(https://i.pinimg.com/564x/d3/9a/f0/d39af04dc1ac214d278115fd33cd0be1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
