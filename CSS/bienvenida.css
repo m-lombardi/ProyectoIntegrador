@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+.cinepop{
+  font-size: 100px;
+  position: absolute;
+  left: 550px;
+}
+.dqcq{
+  font-size: 40px;
+  position: absolute;
+  left: 530px;
+  top: 180px;
+}
+.volcate{
+  font-size: 30px;
+  position: absolute;
+  left: 550px;
+  top: 300px;
+}
+.uk-button{
+  position: absolute;
+  left: 700px;
+  top: 400px;
+  height: 50px;
+  width: 140px;
+  font-size: 20px;
+  background-color: firebrick;
+  color: white;
+}
+
+body{
+  background-image: url(https://www.kissfm.es/wp-content/uploads/2016/05/cine-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
