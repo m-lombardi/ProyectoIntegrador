@@ -4,55 +4,52 @@
     <meta charset="utf-8">
     <title>CinePop</title>
 
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 
     <link rel="stylesheet" href="css/home.css">
 
   </head>
   <body>
-<<<<<<< Updated upstream
     <header class="header">
-      <nav class="main.nav">
+
+      <nav class="main-nav">
         <div class="container">
           <a href="home.html" aria-label= "cinepop">
-            <svg focusable=true>
-              <img src="img/cinepop.png" alt="" class="cinepop-icon">
-            </svg>
+              <img src="img/cinepop.png" alt="" class="cinepop-icon animated bounce">
           </a>
             <div class="inicio">
               <a href="home.html">INICIO</a>
             </div>
-            <div class="genero">
-              <div class="dropdown">
-                <button class="dropbutton">GÉNEROS
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="">Action & adventure</a>
-                    <a href="">Animación</a>
-                    <a href="#">Comedia</a>
-                    <a href="#">Crimen</a>
-                    <a href="#">Documental</a>
-                    <a href="#">Drama</a>
-                    <a href="#">Familia</a>
-                    <a href="#">Misterio</a>
-                    <a href="">News</a>
-                    <a href="#">Reality</a>
-                    <a href="#">Sci-Fi & Fantasy</a>
-                    <a href="#">Soap</a>
-                    <a href="">Talk</a>
-                    <a href="#">War & Politics</a>
-                    <a href="#">Western</a>
-                </div>
+            <div class="uk-inline">
+              <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
+              <div uk-dropdown="pos: bottom-justify">
+                  <ul class="uk-nav uk-dropdown-nav">
+                      <li class="uk-active"><a href="#">Active</a></li>
+                      <li><a href="#">Item</a></li>
+                      <li class="uk-nav-header">Header</li>
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
+                      <li class="uk-nav-divider"></li>
+                      <li><a href="#">Item</a></li>
+                  </ul>
               </div>
-            </div>
+          </div>
             <div class="kids">
               <a href="kids.html">Kids</a>
             </div>
           </div>
       </nav>
-      <div class="nav.right">
+
+      <div class="nav-right">
         <div class="search">
-          <form class="nav.right.form">
+          <form class="nav-right-form">
             <div class="input.search">
               <input id="input.search1" type="text" maxlength="30" name="" value="" placeholder="Buscar títulos, directores y actores" autocomplete="off">
               <span class="input-group-botton">
@@ -62,36 +59,56 @@
           </form>
         </div>
         <div class="login">
-          <a href="#">LOGIN</a>
+          <a href="#" uk-toggle="target: #modal-close-default" >LOGIN</a>
         </div>
         <div class="profile">  <!--preguntar como desplegar perfiles-->
         </div>
       </div>
     </header>
+    <main>
+
+      <!-- This is a button toggling the modal with the default close button -->
+
+<!-- This is the modal with the default close button -->
+<div id="modal-close-default" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Default</h2>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="">
+        </form>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+    </main>
+
 
     <footer class="footer">
-      <div class="social.network">
+      <div class="social-network">
         <a href="https://www.facebook.com/cine.pop.7140" aria-label= "facebook">
-          <svg focusable=true>
+
             <img src="img/facebook.png" alt="" class="facebook-icon">
-          </svg>
+
         </a>
         <a href="https://www.instagram.com/" aria-label= "instagram">
-          <svg focusable=true>
+
             <img src="img/instagram.png" alt="" class="instagram-icon">
-          </svg>
+
         </a>
         <a href="https://twitter.com/login?lang=es" aria-label= "twitter">
-          <svg focusable=true>
+
             <img src="img/twitter.jpg" alt="" class="twitter-icon">
-          </svg>
+
         </a>
         <a href="https://www.youtube.com/" aria-label= "youtube">
-          <svg focusable=true>
+
             <img src="img/youtube.png" alt="" class="youtube-icon">
-          </svg>
+
         </a>
       </div>
+      <div class="info-footer">
+
       <div class="help">
         <ul>
           <li>
@@ -113,14 +130,14 @@
       </div>
       <div class="tmdb">
         <a href="https://www.themoviedb.org/?language=es-ES" aria-label= "tmdb">
-          <svg focusable=true>
+
             <img src="img/tmdb.png" alt="" class="tmdb-icon">
-          </svg>
+
         </a>
       </div>
+    </div>
+
     </footer>
 
-=======
->>>>>>> Stashed changes
   </body>
 </html>
