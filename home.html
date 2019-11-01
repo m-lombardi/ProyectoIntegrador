@@ -4,15 +4,9 @@
     <meta charset="utf-8">
     <title>CinePop</title>
 
-    <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
-
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
-
+        <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/home.css">
 
   </head>
@@ -28,7 +22,7 @@
               <a href="home.html">INICIO</a>
             </div>
             <div class="uk-inline">
-              <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
+              <button class="uk-button uk-button-default" type="button">GÉNEROS</button>
               <div uk-dropdown="pos: bottom-justify">
                   <ul class="uk-nav uk-dropdown-nav">
                       <li class="uk-active"><a href="#">Active</a></li>
@@ -49,14 +43,12 @@
 
       <div class="nav-right">
         <div class="search">
-          <form class="nav-right-form">
-            <div class="input.search">
-              <input id="input.search1" type="text" maxlength="30" name="" value="" placeholder="Buscar títulos, directores y actores" autocomplete="off">
-              <span class="input-group-botton">
-              <button class="but" type="button" name="button">Submit</button>
-              </span>
-            </div>
-          </form>
+          <div class="uk-margin">
+              <form class="uk-search uk-search-default">
+                  <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                  <input class="uk-search-input" type="search" placeholder="Buscar...">
+              </form>
+          </div>
         </div>
         <div class="login">
           <a href="#" uk-toggle="target: #modal-close-default" >LOGIN</a>
@@ -73,7 +65,7 @@
 <div id="modal-close-default" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <h2 class="uk-modal-title">Default</h2>
+        <h2 class="uk-modal-title">Sign In</h2>
         <form class="" action="index.html" method="post">
           <form>
             <div class="uk-margin">
@@ -94,6 +86,23 @@
         </form>
         </div>
     </div>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+<!-- LAS imagenes que aparecen al principio  -->
+<ul class="uk-slideshow-items">
+    <li>
+        <img data-src="images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
+    </li>
+    <li>
+        <img data-src="images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
+    </li>
+    <li>
+        <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
+    </li>
+</ul>
+
+<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
 </div>
 
     </main>
@@ -105,7 +114,7 @@
          <a href="https://www.facebook.com/cine.pop.7140" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
          <a href="https://www.instagram.com/" class="uk-icon-button" uk-icon="instagram"></a>
           <a href="https://www.youtube.com/" class="uk-icon-button" uk-icon="youtube"></a>
-         
+
       </div>
       <div class="info-footer">
 
@@ -138,6 +147,8 @@
     </div>
 
     </footer>
-
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
   </body>
 </html>

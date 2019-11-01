@@ -31,9 +31,10 @@ li{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
 }
 .main-nav{
-  width: 70%;
+  width: 50%;
 }
 .container{
   display: flex;
@@ -44,13 +45,13 @@ li{
 .logo1 {
   width: 300px;
   height: auto;
-  left: 0px;
   padding: 15px;
+  margin-top: 15%;
 }
 
 .nav-right{
   display: flex;
-  width: 25%;
+  width: 23%;
   justify-content: space-around;
 }
 
@@ -70,7 +71,7 @@ li{
 }
 
 .search{
-
+  width: 72%;
 }
 
 .but{
