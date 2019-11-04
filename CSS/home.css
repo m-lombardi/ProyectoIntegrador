@@ -22,7 +22,8 @@ li{
 
 
 .header {
-  background-image: url(http://www.hasmug.com/wp-content/uploads/2013/01/Space_Background.gif) !important;
+  /*background-image: url(http://www.hasmug.com/wp-content/uploads/2013/01/Space_Background.gif) !important;*/
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -96,7 +97,7 @@ main{
 
 .footer{
   /* height: 100px; */
-  /* background-color: lightblue; */
+  background-color: black;
 
 }
 .footer .social-network {
@@ -128,6 +129,7 @@ main{
 .tmdb{
 
 }
+
 
 @media only screen and (max-width: 1150px){
 

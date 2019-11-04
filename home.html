@@ -63,26 +63,32 @@
 
 <!-- This is the modal with the default close button -->
 <div id="modal-close-default" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
+    <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <h2 class="uk-modal-title">Sign In</h2>
+        <h2 class="uk-modal-title" style="color:white">Sign In</h2>
         <form class="" action="index.html" method="post">
           <form>
             <div class="uk-margin">
               <div class="uk-inline">
                 <span class="uk-form-icon" uk-icon="icon: user"></span>
-                <input class="uk-input" type="text">
+                <input class="uk-input" type="text" placeholder="Usuario">
               </div>
             </div>
 
-      <div class="uk-margin">
-          <div class="uk-inline">
+            <div class="uk-margin">
+              <div class="uk-inline">
               <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-              <input class="uk-input" type="text">
-          </div>
-      </div>
+              <input class="uk-input" type="text" placeholder="Contraseña">
+              </div>
+            </div>
 
-  </form>
+            <div class="uk-margin" uk-margin>
+              <button class="uk-button uk-button-default" style="background-color:silver">Submit</button>
+            </div>
+
+            </div>
+
+          </form>
         </form>
         </div>
     </div>
@@ -150,5 +156,8 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+    <script src="javascript/home.js">
+
+    </script>
   </body>
 </html>
