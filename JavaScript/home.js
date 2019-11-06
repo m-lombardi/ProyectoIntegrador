@@ -1,10 +1,33 @@
-/*var queryString = location.search;
-var searchParams = new URLSearchParams (queryString);
-var search = searchParams.get ("search")
-*/
-var url = 'https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US&page=1'
 
-fetch(url)
+
+var api_key= "0e65f11e4e58cb2a30446418b84e1eb4"
+
+fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US&page=1")
+
+  .then (function(response){
+    return response.json ();
+})
+
+
+.then (function(myJson){
+  var posterURL= 'https://image.tmdb.org/t/p/original'
+  console.log (myJson);
+  for (var i=0; i < myJson.results.length; i++){
+    myJson.results[i]
+    console.log ( myJson.results[i].name )
+    console.log (posterURL +myJson.results[i].poster_path)
+    var elementoHTML= document.querySelector ('.populares')
+
+  var contenidoParaInsertar= '<li>'
+  contenidoParaInsertar += '<img src="'+posterURL+ myJson.results[i].poster_path+ '" alt="">'
+  contenidoParaInsertar += '<div class="uk-position-center uk-panel"><h1>'+ myJson.results[i].name + '</hi></div>'
+  contenidoParaInsertar += '</li>'
+
+  elementoHTML.innerHTML += contenidoParaInsertar
+}
+})
+/*
+fetch("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US&page=1")
 .then(function(response){
   return response.json();
   console.log(response);
@@ -31,3 +54,4 @@ fetch(url)
 
 
 })
+*/
