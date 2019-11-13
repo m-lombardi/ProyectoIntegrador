@@ -1,3 +1,177 @@
-.subtituloGenero h2 {
-  color: red;
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(http://www.hasmug.com/wp-content/uploads/2013/01/Space_Background.gif) !important;
+  background-size: cover;
+  position: relative;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+
+.header {
+  /*background-image: url(http://www.hasmug.com/wp-content/uploads/2013/01/Space_Background.gif) !important;*/
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+main{
+  min-height: 600px;
+  padding-top: 140px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.main-nav{
+  width: 50%;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo1 {
+  width: 200px;
+}
+
+.nav-right{
+  display: flex;
+  width: 23%;
+  justify-content: space-around;
+}
+
+
+.inicio {
+  padding: 20px;
+}
+
+.genero{
+  color: white;
+}
+.genero-container{
+  background-color: black;
+  color: white;
+}
+
+.kids{
+  padding: 20px;
+}
+
+
+.search{
+  width: 72%;
+}
+
+.but{
+  height: 20px;
+  width: 60px;
+}
+
+#input.search1{
+  height: 30px;
+  width: 100px;
+}
+
+.uk-slider-items img {
+    width: 100%;
+  }
+
+.titulo-popular{
+    font-size: 1.5em;
+    color: #e5e5e5;
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-left: 5px;
+    border-radius: 5%;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-family: Helvetica;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.subtituloGenero h2{
+  margin-left: 5px;
+  font-size: 1.4vw;
+  color: #e5e5e5;
+}
+
+.nombredegenero h1{
+  font-size: 2.0em;
+  color: #e5e5e5;
+  font-weight: bold;
+  margin-bottom: 3%;
+  margin-left: 5px;
+  border-radius: 5%;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-family: Helvetica;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.scroll{
+  position: absolute;
+  left: 1200px;
+  width: 150px;
+  margin: 60px;
+  background-color: white;
+  color: black;
+}
+
+.footer{
+  /* height: 100px; */
+  background-color: black;
+
+}
+.footer .social-network {
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .info-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tmdb-icon{
+  width: 50px;
+}
+.help{
+
+}
+.help li{
+  font-size: 20px;
+  padding: 20px;
+}
+
+.miembros{
+
+  left: 1000px;
+  padding: 70px;
 }

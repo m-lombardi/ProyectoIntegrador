@@ -1,3 +1,24 @@
+
+      var ulGenero = document.querySelector('.miDropDown');
+      console.log(ulGenero);
+      var liAInsertar = "";
+      fetch ("https://api.themoviedb.org/3/genre/tv/list?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US")
+        .then (function(response){
+          return response.json ();
+        })
+        .then (function(myJson){
+          console.log(myJson);
+          for (var i = 0; i < myJson.genres.length; i++) {
+          //console.log(myJson.genres[i].name)
+          liAInsertar = '<li class="uk-active"><a href="generos.html'+ "?id="+myJson.genres[i].id + "&" + "name="
+          liAInsertar += myJson.genres[i].name + '">'
+          liAInsertar +=  myJson.genres[i].name
+          liAInsertar += '</a></li>'
+          ulGenero.innerHTML += liAInsertar
+          console.log (liAInsertar)
+          }
+})
+
 // para poner el nombre del genero
 
 var queryString = location.search;
@@ -11,7 +32,7 @@ document.getElementById('tituloGenero').innerHTML = nombreGenero ;
 //para poner las series de cada genero//
 
 var api_key= "0e65f11e4e58cb2a30446418b84e1eb4"
-fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&sort_by=popularity.desc&page=1&with_genres=" + idGenero
+fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&sort_by=popularity.desc&page=1&with_genres=" + idGenero)
   .then (function(response){
     return response.json ();
   })
@@ -39,5 +60,5 @@ fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a3044641
   })
 
 
-  .catch(function(error) { console.log("Error: " + error);
-  })
+.catch(function(error) { console.log("Error: " + error);
+ })
