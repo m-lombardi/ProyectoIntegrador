@@ -1,17 +1,18 @@
 // para poner el nombre del genero
 
-var queryString = location.search
-queryString = new URLSearchParams(queryString)
-
-var nombreGen = queryString.get('nombreGen');
-document.querySelector(".nombredegenero").innerHTML= "<h2>" + nombreGen + "</h2>";
-
-
+var queryString = location.search;
+var queryStringObj = new URLSearchParams(queryString);
+console.log(queryStringObj.get('id'));
+console.log(queryStringObj.get('name'));
+var nombreGenero= queryStringObj.get ('name');
+var idGenero = queryStringObj.get ('id');
+document.getElementById('tituloGenero').innerHTML = nombreGenero ;
 
 //para poner las series de cada genero//
 
 var api_key= "0e65f11e4e58cb2a30446418b84e1eb4"
-fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&page=1")
+fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&sort_by=popularity.desc&page=1&with_genres=" + idGenero
+)
   .then (function(response){
     return response.json ();
   })
@@ -31,7 +32,7 @@ fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a3044641
       // console.log (posterURL+myJson.results[i].poster_path)
       contenidoParaInsertar = '<li>'
       contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
-      contenidoParaInsertar += '<div class="uk-panel"><h2>'+ myJson.results[i].name + '</h2></div>'
+      contenidoParaInsertar += '<div class="uk-panel subtituloGenero"><h2>'+ myJson.results[i].name + '</h2></div>'
       contenidoParaInsertar += '</li>'
       elementoHTML.innerHTML += contenidoParaInsertar
      }

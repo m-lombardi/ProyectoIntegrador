@@ -95,8 +95,9 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         .then (function(myJson){
           console.log(myJson);
           for (var i = 0; i < myJson.genres.length; i++) {
-          console.log(myJson.genres[i].name)
-          liAInsertar = '<li class="uk-active"><a href="https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&sort_by=popularity.desc&page=1&with_genres='+myJson.genres[i].id +'">'
+          //console.log(myJson.genres[i].name)
+          liAInsertar = '<li class="uk-active"><a href="generos.html'+ "?id="+myJson.genres[i].id + "&" + "name="
+          liAInsertar += myJson.genres[i].name + '">'
           liAInsertar +=  myJson.genres[i].name
           liAInsertar += '</a></li>'
           ulGenero.innerHTML += liAInsertar
