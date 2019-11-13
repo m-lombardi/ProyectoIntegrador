@@ -3,8 +3,135 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="javascript/detalle.js" charset="utf-8"></script>
   </head>
   <body>
+
+    <header class="header">
+
+      <nav class="main-nav">
+        <div class="container">
+          <a href="home.html" aria-label= "cinepop">
+              <img src="img/logo1.png" alt="" class="logo1 animated bounce">
+          </a>
+            <div class="inicio">
+              <a href="home.html">INICIO</a>
+            </div>
+            <div class="uk-inline">
+              <button class="uk-button uk-button-default genero" type="button">GÉNEROS</button>
+              <div class="genero-container" uk-dropdown="pos: bottom-justify">
+                  <ul class="uk-nav miDropDown uk-dropdown-nav">
+
+                  </ul>
+              </div>
+          </div>
+            <div class="kids">
+              <a href="kids.html">Kids</a>
+            </div>
+          </div>
+      </nav>
+
+      <div class="nav-right">
+        <div class="search">
+          <div class="uk-margin">
+              <form class="uk-search uk-search-default">
+                  <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                  <input class="uk-search-input" type="search" placeholder="Buscar...">
+              </form>
+          </div>
+        </div>
+        <div class="login">
+          <a href="#" uk-toggle="target: #modal-close-default" >LOGIN</a>
+        </div>
+        <div class="profile">  <!--preguntar como desplegar perfiles-->
+        </div>
+      </div>
+      <div id="modal-close-default" uk-modal>
+          <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
+              <button class="uk-modal-close-default" type="button" uk-close></button>
+              <h2 class="uk-modal-title" style="color:white">Sign In</h2>
+              <form class="" action="index.html" method="post">
+                <form>
+                  <div class="uk-margin">
+                    <div class="uk-inline">
+                      <span class="uk-form-icon" uk-icon="icon: user"></span>
+                      <input class="uk-input" type="text" placeholder="Usuario">
+                    </div>
+                  </div>
+
+                  <div class="uk-margin">
+                    <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input" type="text" placeholder="Contraseña">
+                    </div>
+                  </div>
+
+                  <div class="uk-margin" uk-margin>
+                    <button class="uk-button uk-button-default" style="background-color:silver">Submit</button>
+                  </div>
+
+                </form>
+              </form>
+              </div>
+          </div>
+    </header>
+
+    <main>
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="social-network">
+         <a href="https://twitter.com/login?lang=es" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+         <a href="https://www.facebook.com/cine.pop.7140" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+         <a href="https://www.instagram.com/" class="uk-icon-button" uk-icon="instagram"></a>
+          <a href="https://www.youtube.com/" class="uk-icon-button" uk-icon="youtube"></a>
+
+      </div>
+      <div class="info-footer">
+
+      <div class="help">
+        <ul>
+          <li>
+          <a href="#">Audio y subtítulos</a>
+          </li>
+          <li>
+          <a href="#">Contáctanos</a>
+          </li>
+          <li>
+          <a href="#">Preguntas frecuentes</a>
+          </li>
+        </ul>
+      </div>
+      <div class="miembros">
+        <ul>
+          <li>Lara Fernández Olveira</li>
+          <li>Mercedes Lombardi</li>
+        </ul>
+      </div>
+      <div class="tmdb">
+        <a href="https://www.themoviedb.org/?language=es-ES" aria-label= "tmdb">
+
+            <img src="img/tmdb.png" alt="" class="tmdb-icon">
+
+        </a>
+      </div>
+    </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>

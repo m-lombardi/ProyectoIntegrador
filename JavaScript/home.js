@@ -1,3 +1,22 @@
+window.onload = function(){
+
+var ulPopulares = document.querySelector('.populares')
+
+  // function myFunction(x) {
+  // if (x.matches) { // If media query matches
+  //     if(ulPopulares.classList.contains('uk-child-width-1-6@m')){
+  //       ulPopulares.classList.remove('uk-child-width-1-6@m')
+  //       ulPopulares.classList.add('uk-child-width-1-3@m')
+  //     }else{
+  //       ulPopulares.classList.add('uk-child-width-1-6@m')
+  //       ulPopulares.classList.remove('uk-child-width-1-3@m')
+  //     }
+  //   }
+  // }
+
+  // var x = window.matchMedia("(max-width: 700px)")
+  // myFunction(x) // Call listener function at run time
+  // x.addListener(myFunction) // Attach listener function on state changes
 
 
 var api_key= "0e65f11e4e58cb2a30446418b84e1eb4"
@@ -19,10 +38,10 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
       myJson.results[i]
       // console.log ( myJson.results[i].name )
       // console.log (posterURL+myJson.results[i].poster_path)
-      contenidoParaInsertar = '<li>'
+      contenidoParaInsertar = '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
       contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
       contenidoParaInsertar += '<div class="uk-panel subtitulo1"><h2>'+ myJson.results[i].name + '</h2></div>'
-      contenidoParaInsertar += '</li>'
+      contenidoParaInsertar += '</li></a>'
       elementoHTML.innerHTML += contenidoParaInsertar
      }
 
@@ -104,3 +123,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
           console.log (liAInsertar)
           }
 })
+
+
+
+}

@@ -131,8 +131,8 @@ main{
 
 .scroll{
   position: absolute;
-  left: 1200px;
-  width: 150px;
+  left: 72%;
+  width: 20%;
   margin: 60px;
   background-color: white;
   color: black;
