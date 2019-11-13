@@ -12,7 +12,6 @@ document.getElementById('tituloGenero').innerHTML = nombreGenero ;
 
 var api_key= "0e65f11e4e58cb2a30446418b84e1eb4"
 fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&sort_by=popularity.desc&page=1&with_genres=" + idGenero
-)
   .then (function(response){
     return response.json ();
   })
