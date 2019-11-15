@@ -172,7 +172,24 @@ main{
   padding: 70px;
 }
 
+.invisible {
+  display: none;
+  z-index: 9999;
+}
 
+@media only screen and (max-width: 900px) {
+
+  .invisible {
+    display: block;
+
+  }
+#altodelmenu {
+  height: auto;
+}
+
+.loguito{
+  width: 100px;
+}
 
 
 @media only screen and (max-width: 1150px){
