@@ -130,11 +130,16 @@ main{
 }
 
 .uk-card-default {
-  font-size: 1.0vw;
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-size: 13.4px;
+    text-transform: lowercase;
+    padding: 5.0%;
 
 }
 .uk-card-body {
-  padding: 0px;
+
+
 }
 
 .scroll{
