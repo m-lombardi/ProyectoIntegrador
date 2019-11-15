@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+.detalledeserie{
+  overflow: none;
+}
+.subcontainer{
+  float: left;
+  width: 45%;
+  margin-right: 2%;
+  margin-left: 8%;
+
+}
+.divfoto {
+  float: left;
+  width: 45%;
+  margin-right: 0;
+  text-align: center;
+}
