@@ -129,10 +129,14 @@ main{
   color: #e5e5e5;
 }
 
-/*.uk-drop-right-center {
-  font-size: 2px;
+.uk-card-default {
+  font-size: 1.0vw;
+
 }
-*/
+.uk-card-body {
+  padding: 0px;
+}
+
 .scroll{
   position: absolute;
   left: 72%;

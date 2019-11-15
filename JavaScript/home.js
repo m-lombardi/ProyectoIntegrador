@@ -43,7 +43,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
       contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
       contenidoParaInsertar += '<div class="uk-panel subtitulo1"><h2>'+ myJson.results[i].name + '</h2></div>'
       contenidoParaInsertar += '</li> <div uk-drop="pos: right-center">'
-      contenidoParaInsertar += '<div class="uk-card uk-card-body uk-card-default">'+ myJson.results[i].name + myJson.results[i].genres + myJson.results[i].overview + '</div>'
+      contenidoParaInsertar += '<div class="uk-card uk-card-body uk-card-default">'+ /* myJson.results[i].name + myJson.results[i].genres*/ myJson.results[i].overview + '</div>'
       contenidoParaInsertar +=  '</div></a> </div>'
       elementoHTML.innerHTML += contenidoParaInsertar
      }
