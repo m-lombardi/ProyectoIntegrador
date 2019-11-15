@@ -34,7 +34,6 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
     var contenidoParaInsertar = ""
 
     for (var i=0; i < myJson.results.length; i++){
-
       myJson.results[i]
       // console.log ( myJson.results[i].name )
       // console.log (posterURL+myJson.results[i].poster_path)

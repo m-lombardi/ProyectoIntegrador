@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Cinepop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/home.css">
-    <script src="javascript/detalle.js" charset="utf-8"></script>
   </head>
   <body>
 
@@ -145,7 +144,10 @@
     <div class="detalledeserie">
       <div class="subcontainer">
         <div class="infodeserie">
-
+          <h1 class="titulo"></h1>
+          <h3 class="idioma"></h3>
+          <h3 class="genero2">Género/os: </h3>
+          <h3 class="temporadas"></h3>
         </div>
         <div class="">
 
@@ -153,7 +155,7 @@
               <li class="uk-close">
                   <a class="uk-accordion-title color" href="#"> Sinópsis </a>
                   <div class="uk-accordion-content">
-
+                    <p class="sinopsis"></p>
                   </div>
               </li>
           </ul>
@@ -190,7 +192,9 @@
       </div>
 
       <div class="divfoto">
-
+        <a class='estrellita' href='' uk-icon='icon:star;ratio:3'>
+          <img src="" class="foto" >
+        </a>
       </div>
 
       </div>
@@ -240,5 +244,6 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
     <script src="javascript/home.js"></script>
+    <script src="javascript/detalle.js"></script>
   </body>
 </html>
