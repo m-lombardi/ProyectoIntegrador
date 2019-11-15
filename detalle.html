@@ -6,7 +6,8 @@
     <title>Cinepop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <link rel="stylesheet" href="css/detalle.css">
   </head>
   <body>
 
@@ -28,9 +29,6 @@
                   </ul>
               </div>
           </div>
-            <div class="kids">
-              <a href="kids.html">Kids</a>
-            </div>
           </div>
       </nav>
 
@@ -140,8 +138,14 @@
           <!-- // termina menu media query -->
     </header>
 
-    <main>
+  <main>
     <div class="detalledeserie">
+      <div class="divfoto">
+        <!-- //
+<a class='estrellita' href='' uk-icon='icon:star;ratio:3'>-->
+          <img src="" class="foto" >
+        <!-- </a> -->
+      </div>
       <div class="subcontainer">
         <div class="infodeserie">
           <h1 class="titulo"></h1>
@@ -149,7 +153,7 @@
           <h3 class="genero2">Género/os: </h3>
           <h3 class="temporadas"></h3>
         </div>
-        <div class="">
+        <div class="subcontainer2">
 
           <ul uk-accordion>
               <li class="uk-close">
@@ -167,6 +171,10 @@
       <span class="fa fa-star"></span>
       <br>
       <br>
+      </div>
+
+    <div class="extras">
+
 
       <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Ver Recomendaciones</button>
 
@@ -176,25 +184,14 @@
 
               <button class="uk-offcanvas-close" type="button" uk-close></button>
               <ul class="uk-thumbnav uk-thumbnav-vertical fotosrecomendadas" uk-margin>
-
-
-            </ul>
+              </ul>
 
 
           </div>
       </div>
-      </div>
 
       <div uk-lightbox>
               <a class="uk-button uk-button-default trailer" href="" data-caption="YouTube">VER TRAILER</a>
-      </div>
-
-      </div>
-
-      <div class="divfoto">
-        <a class='estrellita' href='' uk-icon='icon:star;ratio:3'>
-          <img src="" class="foto" >
-        </a>
       </div>
 
       </div>

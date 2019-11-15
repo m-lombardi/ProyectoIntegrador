@@ -1,35 +1,207 @@
 *{
   box-sizing: border-box;
 }
-.detalledeserie{
-  overflow: none;
+
+body{
+  background-image: url(http://www.hasmug.com/wp-content/uploads/2013/01/Space_Background.gif) !important;
+  background-size: cover;
+  position: relative;
 }
-.subcontainer{
-  float: left;
-  width: 45%;
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+
+.header {
+  /*background-image: url(http://www.hasmug.com/wp-content/uploads/2013/01/Space_Background.gif) !important;*/
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+main{
+  min-height: 600px;
+  padding-top: 140px;
+  margin-left: 2%;
   margin-right: 2%;
+}
+.main-nav{
+  width: 50%;
+}
+.container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.logo1 {
+  width: 200px;
+}
+
+.nav-right{
+  display: flex;
+  width: 23%;
+  justify-content: space-around;
+}
+
+
+.inicio {
+  padding: 20px;
+}
+
+.genero{
+  color: white;
+}
+.genero-container{
+  background-color: black;
+  color: white;
+}
+
+
+.search{
+  width: 72%;
+}
+
+.but{
+  height: 20px;
+  width: 60px;
+}
+
+#input.search1{
+  height: 30px;
+  width: 100px;
+}
+
+/* PONER TODA LA CSS PARA DETALLES */
+
+.detalledeserie {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 9%;
   margin-left: 8%;
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
 
-}
-.anchitomedia{
-  width: 80%;
-}
-.checked {
-  color: orange;
-}
-.fotito{
-  width:50%;
-  border: #1e87f0;
-  border-style: outset;
-
-}
 .divfoto {
+  float: right;
+  width: 30%;
+
+}
+.subcontainer {
   float: left;
-  width: 45%;
-  margin-right: 0;
-  text-align: center;
+
+}
+.subcontainer h1,h2,h3 {
+  color:white;
+  font-family: Helvetica;
+
+}
+
+.subcontainer h3 {
+  color:white;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 2.4vw;
+}
+
+h2 {
+  font-size:1.4vw;
+}
+
+h3 {
+  font-size: 1.4vw;
 }
 .color{
  color: white;
  font-family: Helvetica;
+}
+
+.foto {
+
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer{
+  /* height: 100px; */
+  background-color: black;
+
+}
+.footer .social-network {
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .info-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tmdb-icon{
+  width: 50px;
+}
+.help{
+
+}
+.help li{
+  font-size: 20px;
+  padding: 20px;
+}
+
+.miembros{
+
+  left: 1000px;
+  padding: 70px;
+}
+
+.invisible {
+  display: none;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 440px) {
+
+  .invisible {
+    display: block;
+
+  }
+#altodelmenu {
+  height: auto;
+}
+
+.loguito{
+  width: 100px;
+}
+
+
+@media only screen and (max-width: 1150px){
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 440px){
+
 }
