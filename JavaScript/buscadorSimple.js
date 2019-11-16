@@ -2,6 +2,26 @@ window.onload = function () {
 
   var query = new URLSearchParams(location.search)
 
+  var ulGenero = document.querySelector('.miDropDown');
+  console.log(ulGenero);
+  var liAInsertar = "";
+  fetch ("https://api.themoviedb.org/3/genre/tv/list?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US")
+    .then (function(response){
+      return response.json ();
+    })
+    .then (function(myJson){
+      console.log(myJson);
+      for (var i = 0; i < myJson.genres.length; i++) {
+      //console.log(myJson.genres[i].name)
+      liAInsertar = '<li class="uk-active"><a href="generos.html'+ "?id="+myJson.genres[i].id + "&" + "name="
+      liAInsertar += myJson.genres[i].name + '">'
+      liAInsertar +=  myJson.genres[i].name
+      liAInsertar += '</a></li>'
+      ulGenero.innerHTML += liAInsertar
+      console.log (liAInsertar)
+      }
+})
+
   var busqueda = query.get('busqueda')
   console.log(busqueda);
 
