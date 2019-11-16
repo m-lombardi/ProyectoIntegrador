@@ -91,8 +91,6 @@ main{
 .detalledeserie {
   display: flex;
   justify-content: space-between;
-  margin-right: 9%;
-  margin-left: 8%;
   margin-top: 4%;
   margin-bottom: 8%;
 }
@@ -100,10 +98,13 @@ main{
 .divfoto {
   float: right;
   width: 30%;
+  margin-left: 5%;
 
 }
 .subcontainer {
   float: left;
+  margin-right: 20%;
+
 
 }
 .subcontainer h1,h2,h3 {
@@ -140,6 +141,23 @@ h3 {
 .extras {
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
+  border-radius: 35px;
+}
+
+.trailer {
+
+  border-radius: 35px;
+  border: 2px solid #F3C11C;
+  background-color: #F3C11C;
+
+}
+
+.recomendaciones {
+  border-radius: 35px;
+  border: 2px solid #F3C11C;
+  background-color: #F3C11C;
+
 }
 
 .footer{
