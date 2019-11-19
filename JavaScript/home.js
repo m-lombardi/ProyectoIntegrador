@@ -68,6 +68,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
         contenidoParaInsertar = '<li >'
+        contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'">'
         contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
         contenidoParaInsertar += '<div class="uk-panel subtitulo2 "><h2>'+ myJson.results[i].name + '</h2></div>'
         contenidoParaInsertar += '</li>'
@@ -96,6 +97,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
         contenidoParaInsertar = '<li >'
+        contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'">'
         contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
         contenidoParaInsertar += '<div class="uk-panel subtitulo3"><h2>'+ myJson.results[i].name + '</h2></div>'
         contenidoParaInsertar += '</li>'

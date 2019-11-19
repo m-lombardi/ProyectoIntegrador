@@ -112,8 +112,8 @@ window.onload = function(){
       for(var i = 0; i < objetorecomendar.results.length; i++) {
         contenedorRecomendaciones.innerHTML += "<li><a href='detalle.html?id=" + objetorecomendar.results[i].id + "'><img src='https://image.tmdb.org/t/p/original" + objetorecomendar.results[i].poster_path + "' width='150' alt=''></a></li>";
       }
-      // var recomen= objetorecomendar.results[0].
-      // <li><a href="#"><img src="images/dark.jpg" width="100" alt=""></a></li>
+
+
     })
 
 
