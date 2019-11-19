@@ -22,9 +22,37 @@ window.onload = function (){
       }
 })
 
-  var sort_by = query.get ('sort')
-  console.log (sort_by)
-  fetch https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&sort_by=popularity.asc&with_genres=18&with_keywords=FRIENDS
+  var generoAvanzado = query.get ('genero')
+  console.log(generoAvanzado);
+
+  var keyword = query.get ('keyword')
+  console.log(keyword);
+
+  fetch(`https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&with_genres=` + generoAvanzado + `&with_keywords=` + keyword)
+    .then(function(res) {
+      return res.json()
+    })
+    .then(function(myJson){
+      var posterURL= 'https://image.tmdb.org/t/p/original'
+      var elementoHTML= document.querySelector('.rated')
+      console.log(myJson);
+      var contenidoParaInsertar = ""
+
+      for (var i=0; i < myJson.results.length; i++){
+        //myJson.results[i]
+        // console.log ( myJson.results[i].name )
+        // console.log (posterURL+myJson.results[i].poster_path)
+        contenidoParaInsertar = '<li>'
+        contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
+        contenidoParaInsertar += '<div class="uk-panel subtitulo2 "><h2>'+ myJson.results[i].name + '</h2></div>'
+        contenidoParaInsertar += '</li>'
+        elementoHTML.innerHTML += contenidoParaInsertar
+       }
+
+    })
+    .catch(function(error){
+      console.log(error);
+    })
 
 
 
