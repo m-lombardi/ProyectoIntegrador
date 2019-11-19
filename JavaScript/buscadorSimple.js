@@ -39,7 +39,7 @@ window.onload = function () {
         //myJson.results[i]
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
-        contenidoParaInsertar = '<li >'
+        contenidoParaInsertar = '<li>'
         contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
         contenidoParaInsertar += '<div class="uk-panel subtitulo2 "><h2>'+ myJson.results[i].name + '</h2></div>'
         contenidoParaInsertar += '</li>'
