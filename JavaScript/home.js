@@ -1,4 +1,6 @@
 window.onload = function(){
+var numeroPagina = 1
+var verMas = document.querySelector ('.ver')
 
 var ulPopulares = document.querySelector('.populares')
 
@@ -115,7 +117,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
           console.log(myJson);
           for (var i = 0; i < myJson.genres.length; i++) {
           //console.log(myJson.genres[i].name)
-          liAInsertar = '<li class="uk-active"><a href="generos.html'+ "?id="+myJson.genres[i].id + "&" + "name="
+          liAInsertar = '<li class="uk-active"><a href="generos.html'+ "?id="+ myJson.genres[i].id + "&" + "name="
           liAInsertar += myJson.genres[i].name + '">'
           liAInsertar +=  myJson.genres[i].name
           liAInsertar += '</a></li>'
