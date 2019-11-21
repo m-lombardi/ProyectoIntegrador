@@ -15,7 +15,7 @@ window.onload = function(){
       return response.json ();
     })
     .then (function(myJson){
-      // console.log(myJson);
+      console.log(myJson);
       for (var i = 0; i < myJson.genres.length; i++) {
       //console.log(myJson.genres[i].name)
 
@@ -27,11 +27,11 @@ window.onload = function(){
       liAInsertar +=  myJson.genres[i].name
       liAInsertar += '</a></li>'
       ulGenero.innerHTML += liAInsertar
-      // console.log (liAInsertar)
+      console.log (liAInsertar)
       }
     })
 
-  fetch ("https://api.themoviedb.org/3/tv/" + idSerie + "?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US")
+  fetch ("https://api.themoviedb.org/3/tv/"+idSerie+"?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US")
     .then (function(response){
       return response.json ();
     })
@@ -57,8 +57,6 @@ window.onload = function(){
          sinopsis.innerText = myJson.overview
          var temporadas= document.querySelector ('.temporadas');
          temporadas.innerText = "Temporadas: " + myJson.number_of_seasons
-         var calificacion= document.querySelector ('.calificacion');
-         calificacion.innerText = "Calificacion: " + myJson.vote_average
          var generos = document.querySelector ('.genero2');
          // console.log(myJson.genres)
          for (var i = 0; i < myJson.genres.length; i++) {
@@ -72,8 +70,6 @@ window.onload = function(){
 
 
 
-
-
          //contenidoParaInsertar+= "<h1 class=color>" +  titulo + "</h1>"
          //contenidoParaInsertar+= "<h3 class=color> Idioma: " +  lenguaje + "</h3>"
          //contenidoParaInsertar+= "<h3 class='color anchitomedia'> Género/os: " +  h2 + "</h3>"
@@ -84,43 +80,6 @@ window.onload = function(){
 
     })
 
-    fetch ("https://api.themoviedb.org/3/tv/" + idSerie + "/videos?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US")
-    .then (function (response){
-      return response.json()
-    })
-
-    .then (function (objetoRespuesta){
-      console.log (objetoRespuesta);
-      var video = objetoRespuesta.results[0].key
-      var elementoHTML= document.querySelector('div.trailer a')
-      console.log(video);
-      console.log(elementoHTML);
-      elementoHTML.href += video
-        // elementoHTML.href = elementoHTML.href + video
-
-
-    })
-
-    fetch ("https://api.themoviedb.org/3/tv/" + idSerie + "/recommendations?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US&page=1")
-    .then (function (response){
-      return response.json()
-    })
-
-    .then (function (objetorecomendar){
-      console.log(objetorecomendar.results);
-      var contenedorRecomendaciones = document.querySelector('.fotosrecomendadas');
-      for(var i = 0; i < objetorecomendar.results.length; i++) {
-        contenedorRecomendaciones.innerHTML += "<li><a href='detalle.html?id=" + objetorecomendar.results[i].id + "'><img src='https://image.tmdb.org/t/p/original" + objetorecomendar.results[i].poster_path + "' width='150' alt=''></a></li>";
-      }
-      // var recomen= objetorecomendar.results[0].
-      // <li><a href="#"><img src="images/dark.jpg" width="100" alt=""></a></li>
-    })
-
-
-
-
 }
-
-
 
 // tenemos que poner en el html todos los h1/h2 que queremos que aparezcan y para cambiarlos los capturamos por su clase con javascript (con un document.querySelector)

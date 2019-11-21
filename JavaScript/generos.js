@@ -51,7 +51,6 @@ fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a3044641
       // console.log ( myJson.results[i].name )
       // console.log (posterURL+myJson.results[i].poster_path)
       contenidoParaInsertar = '<li>'
-      contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'">'
       contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
       contenidoParaInsertar += '<div class="uk-panel subtituloGenero"><h2>'+ myJson.results[i].name + '</h2></div>'
       contenidoParaInsertar += '</li>'

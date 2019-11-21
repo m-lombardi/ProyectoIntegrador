@@ -37,8 +37,8 @@ li{
 main{
   min-height: 600px;
   padding-top: 140px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .main-nav{
   width: 50%;
@@ -96,15 +96,14 @@ main{
 }
 
 .divfoto {
-  float: right;
+  float: left;
   width: 30%;
-  margin-left: 5%;
+  margin-right:inherit;
 
 }
 .subcontainer {
-  float: left;
-  margin-right: 20%;
-
+  float: right;
+  margin-left: auto;
 
 }
 .subcontainer h1,h2,h3 {
@@ -151,7 +150,6 @@ h3 {
   border: 2px solid #F3C11C;
   background-color: #F3C11C;
 
-
 }
 
 .recomendaciones {
@@ -170,7 +168,7 @@ h3 {
   padding: 10px;
   width: 30%;
   display: flex;
-  margin-left: 2%;
+  justify-content: space-around;
 }
 
 .footer .info-footer{
