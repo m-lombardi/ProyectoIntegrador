@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/resultadosAvanzados.css">
   </head>
   <body>
 
@@ -137,17 +138,50 @@
           <!-- // termina menu media query -->
     </header>
 
-    <main>
-      <h1 class=titulo-popular>Buscador Avanzado</h1>
+    <main class="main">
 
+      <a href="resultadosAvanzado.html">
+        <button type="button" name="button">Buscador Avanzado</button>
+      </a>
+      <h1 class=titulo-popular>Buscador Avanzado</h1>
+        <p class="resultadosAvanzado"></p>
       <form class="uk-search uk-search-default" method="GET" action="resultadosAvanzado.html">
-          <a href="" class="uk-list-icon-flip">
-            <span uk-icon="list"></span>
-          </a>
-          <input name="genero" class="uk-genre-input" type="search" placeholder="Género/os...">
-          <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-          <input name="keyword" class="uk-search-input" type="search" placeholder="Keywords...">
+
+          <select class="opcGen" name="with_genres">
+            <option value="with_genres" disabled selected>Género incluído</option>
+
+          </select>
+
+          <select class="opcNoGen" name="without_genres" placeholder= "Género no incluído">
+            <option value="without_genres" disabled selected>Género no incluído</option>
+          </select>
+
+          <select class="sort_by" name="sort_by" placeholder= "Sort by...">
+            <option value="sort" disabled selected>Sort by</option>
+            <option value="popularity.asc">Most popular</option>
+            <option value="popularity.desc">Less popular</option>
+            <option value="first_air_date.asc">Newest</option>
+            <option value="first_air_date.desc">Oldest</option>
+            <option value="vote_average.asc">Best Voted</option>
+            <option value="vote_average.desc">Less voted</option>
+          </select>
+
+          <select class="year" name="first_air_date_year">
+            <option value="year" disabled selected>Año de estreno</option>
+
+          </select>
+
+          <button type="submit"  name="">Submit</button>
       </form>
+
+      <div class="uk-position-relative uk-visible-toggle uk-light carrousel" tabindex="-1" uk-slider="sets: true">
+
+          <ul class="rated uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m">
+          </ul>
+
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+      </div>
 
     </main>
 
