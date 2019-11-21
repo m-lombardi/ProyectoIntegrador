@@ -87,13 +87,13 @@ window.onload = function (){
   var opsAinsertar = "";
   var anioAinsertar = "";
   var generoElegido = query.get('with_genres') ;
-  console.log(generoElegido);
+  // console.log(generoElegido);
   var generoNoElegido = query.get('without_genres') ;
-  console.log(generoNoElegido);
+  // console.log(generoNoElegido);
   var ordenar = query.get('sort_by');
-  console.log(ordenar);
+  // console.log(ordenar);
   var anioElegido = query.get('first_air_date_year');
-  console.log(anioElegido);
+  // console.log(anioElegido);
 
 
 //   for (var i = 0; i < arrayDeGeneros.length; i++) {
@@ -148,7 +148,7 @@ for (var i = 0; i < 50; i++) {
       console.log(myJson.results)
       var contenidoAInsertar="";
 
-      if (myJson.results.length == 0 ) {
+      if (myJson.results.length == 0) {
 
         var resultado = document.querySelector ('.resultadosAvanzado');
         resultado.innerText = "No se han encontrado resultados para su busqueda "
@@ -159,14 +159,14 @@ for (var i = 0; i < 50; i++) {
       //myJson.results[i]
       // console.log ( myJson.results[i].name )
       // console.log (posterURL+myJson.results[i].poster_path)
-      var resultado2 = document.querySelector ('.rated')
-      var idSerie = query.get('id');
+      var elementos = document.querySelector ('.seriestodas');
       var posterURL= 'https://image.tmdb.org/t/p/original';
 
-      contenidoAInsertar ='<li class= "resultseries"><a href="detalle.html?id=' + myJson.results[i].id +'">'
-      contenidoAInsertar += '<div class= "serie-imagen"><img src="' + posterURL + myJson.results [i].backdrop_path + '" alt="">'
+      contenidoAInsertar = '<div class="uk-inline">'
+      contenidoAInsertar +='<li class= "resultseries"><a href="detalle.html?id=' + myJson.results[i].id +'">'
+      contenidoAInsertar += '<img class="uk-height-small" src="' + posterURL + myJson.results [i].backdrop_path + '" alt="">'
       contenidoAInsertar += '<div> <h2>' + myJson.results [i].name + '</h2></div>'
-      contenidoAInsertar += '</div></a></li>'
+      contenidoAInsertar += '</a></li></div>'
       elementos.innerHTML = contenidoAInsertar
 
       // contenidoAInsertar = '<div class="uk-animation-toggle serie-buscador" tabindex="0">'

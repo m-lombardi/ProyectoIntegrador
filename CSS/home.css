@@ -94,6 +94,9 @@ main{
     width: 100%;
   }
 
+.busq{
+  font-size: 20px;
+}
 .titulo-popular{
     font-size: 1.5em;
     color: #e5e5e5;
@@ -141,9 +144,18 @@ main{
 
 }
 
+.masinfo{
+  color: black;
+  margin-top: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+.icon{
+  color:black;
+}
 .scroll{
   position: absolute;
-  left: 72%;
+  left: 60%;
   width: 20%;
   margin: 60px;
   background-color: white;
@@ -196,10 +208,17 @@ main{
   .invisible {
     display: block;
 
+
   }
 #altodelmenu {
   height: auto;
+  width: auto;
+  right:8%;
 }
+.iconmenu{
+  color:white;
+}
+
 
 .loguito{
   width: 100px;

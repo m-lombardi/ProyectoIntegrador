@@ -85,7 +85,9 @@ main{
   height: 30px;
   width: 100px;
 }
-
+.busq{
+  font-size: 20px;
+}
 /* PONER TODA LA CSS PARA DETALLES */
 
 .detalledeserie {

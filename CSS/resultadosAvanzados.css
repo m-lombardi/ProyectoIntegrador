@@ -9,12 +9,15 @@ body{
 }
 
 .main{
-  height: 800px;
+  height: 100%;
   padding-top: 140px;
   margin-left: 2%;
   margin-right: 2%;
 }
 
+.busq{
+  font-size: 20px;
+}
 
 .uk-slider-items img {
     width: 100%;
@@ -30,10 +33,58 @@ body{
     color: black;
   }
 
+
+.formu{
+  width: 100%;
+  height: 50%;
+}
+
+.opcGen{
+  width:50%;
+  height: 6%;
+  margin-bottom:1%;
+}
+.opcNoGen{
+  width: 50%;
+  height: 6%;
+  margin-bottom: 1%;
+}
+.sort_by{
+  width:50%;
+  height: 6%;
+  margin-bottom: 1%;
+}
+.year{
+  width:50%;
+  height: 6%;
+  margin-bottom: 1%;
+}
+.submit{
+  width:50%;
+  height: 6%;
+  margin-bottom: 1%;
+}
+
 .carrousel{
   height: 500px;
   width: auto;
 }
+
+.rated{
+  height: 450px;
+  width: auto;
+}
+.uk-slider-items img {
+    width: 100%;
+  }
+  .uk-card-default {
+      font-family: sans-serif;
+      line-height: 1.4;
+      font-size: 13.4px;
+      text-transform: lowercase;
+      padding: 5.0%;
+
+  }
  /*
  .seriestodas{
   display: flex;

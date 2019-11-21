@@ -141,11 +141,11 @@
     <main class="main">
 
       <a href="resultadosAvanzado.html">
-        <button type="button" name="button">Buscador Avanzado</button>
+        <button type="button" name="button" style="background-color:silver" class="busq">Buscador Avanzado</button>
       </a>
-      <h1 class=titulo-popular>Buscador Avanzado</h1>
+      <h1 class=titulo-popular>Filtre según sus preferencias</h1>
         <p class="resultadosAvanzado"></p>
-      <form class="uk-search uk-search-default" method="GET" action="resultadosAvanzado.html">
+      <form class="uk-search uk-search-default formu" method="GET" action="resultadosAvanzado.html">
 
           <select class="opcGen" name="with_genres">
             <option value="with_genres" disabled selected>Género incluído</option>
@@ -171,7 +171,7 @@
 
           </select>
 
-          <button type="submit"  name="">Submit</button>
+          <button type="submit"  name="" class="submit">Send</button>
       </form>
 
       <div class="uk-position-relative uk-visible-toggle uk-light carrousel" tabindex="-1" uk-slider="sets: true">
