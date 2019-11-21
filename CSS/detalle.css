@@ -37,8 +37,8 @@ li{
 main{
   min-height: 600px;
   padding-top: 140px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .main-nav{
   width: 50%;
@@ -96,14 +96,15 @@ main{
 }
 
 .divfoto {
-  float: left;
+  float: right;
   width: 30%;
-  margin-right:inherit;
+  margin-left: 5%;
 
 }
 .subcontainer {
-  float: right;
-  margin-left: auto;
+  float: left;
+  margin-right: 20%;
+
 
 }
 .subcontainer h1,h2,h3 {
