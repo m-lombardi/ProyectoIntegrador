@@ -190,7 +190,9 @@ main{
 }
 
 @media only screen and (max-width: 440px) {
-
+    .nav-right{
+      display: none;
+    }
   .invisible {
     display: block;
 
