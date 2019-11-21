@@ -87,13 +87,13 @@ window.onload = function (){
   var opsAinsertar = "";
   var anioAinsertar = "";
   var generoElegido = query.get('with_genres') ;
-  // console.log(generoElegido);
+  console.log(generoElegido);
   var generoNoElegido = query.get('without_genres') ;
-  // console.log(generoNoElegido);
+  console.log(generoNoElegido);
   var ordenar = query.get('sort_by');
-  // console.log(ordenar);
+  console.log(ordenar);
   var anioElegido = query.get('first_air_date_year');
-  // console.log(anioElegido);
+  console.log(anioElegido);
 
 
 //   for (var i = 0; i < arrayDeGeneros.length; i++) {
