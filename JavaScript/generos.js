@@ -102,6 +102,7 @@ fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a3044641
 
 
 
+
  var busqueda = query.get('busqueda')
  console.log(busqueda);
 
