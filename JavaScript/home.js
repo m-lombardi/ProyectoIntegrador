@@ -39,7 +39,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
       myJson.results[i]
       // console.log ( myJson.results[i].name )
       // console.log (posterURL+myJson.results[i].poster_path)
-      contenidoParaInsertar =
+      // contenidoParaInsertar = 
 
       contenidoParaInsertar = '<div class="uk-inline">'
       contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
@@ -73,21 +73,21 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         myJson.results[i]
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
-<<<<<<< HEAD
-        contenidoParaInsertar = '<div class="uk-inline">'
-        contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
-        contenidoParaInsertar += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">'
-        contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
-        contenidoParaInsertar += '<div class="uk-position-center"><span class="uk-transition-fade icon" uk-icon="icon: plus; ratio: 2"> <p class="masinfo">INFO</p></span></div></div>'
-        contenidoParaInsertar += '<div class="uk-panel subtitulo2"><h2>'+ myJson.results[i].name + '</h2></div>'
-        contenidoParaInsertar += '</li></a> </div>'
-=======
+
+        // contenidoParaInsertar = '<div class="uk-inline">'
+        // contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
+        // contenidoParaInsertar += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">'
+        // contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
+        // contenidoParaInsertar += '<div class="uk-position-center"><span class="uk-transition-fade icon" uk-icon="icon: plus; ratio: 2"> <p class="masinfo">INFO</p></span></div></div>'
+        // contenidoParaInsertar += '<div class="uk-panel subtitulo2"><h2>'+ myJson.results[i].name + '</h2></div>'
+        // contenidoParaInsertar += '</li></a> </div>'
+
         contenidoParaInsertar = '<li >'
         contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'">'
         contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
         contenidoParaInsertar += '<div class="uk-panel subtitulo2 "><h2>'+ myJson.results[i].name + '</h2></div>'
         contenidoParaInsertar += '</li>'
->>>>>>> master
+
         elementoHTML.innerHTML += contenidoParaInsertar
        }
 
@@ -112,19 +112,19 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         myJson.results[i]
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
-<<<<<<< HEAD
+
         contenidoParaInsertar = '<div class="uk-inline">'
         contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
         contenidoParaInsertar += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">'
         contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
         contenidoParaInsertar += '<div class="uk-position-center"><span class="uk-transition-fade icon" uk-icon="icon: plus; ratio: 2"> <p class="masinfo">INFO</p></span></div></div>'
-=======
+
         contenidoParaInsertar = '<li >'
         contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'">'
         contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
->>>>>>> master
         contenidoParaInsertar += '<div class="uk-panel subtitulo3"><h2>'+ myJson.results[i].name + '</h2></div>'
         contenidoParaInsertar += '</li></a> </div>'
+
         elementoHTML.innerHTML += contenidoParaInsertar
          }
 

@@ -167,7 +167,7 @@ for (var i = 0; i < 50; i++) {
       contenidoAInsertar += '<img class="uk-height-small" src="' + posterURL + myJson.results [i].backdrop_path + '" alt="">'
       contenidoAInsertar += '<div> <h2>' + myJson.results [i].name + '</h2></div>'
       contenidoAInsertar += '</a></li></div>'
-      elementos.innerHTML = contenidoAInsertar
+      elementos.innerHTML += contenidoAInsertar
 
       // contenidoAInsertar = '<div class="uk-animation-toggle serie-buscador" tabindex="0">'
       // contenidoAInsertar += '<a href="detalle.html?idSerie=`+ idSerie + `">'
