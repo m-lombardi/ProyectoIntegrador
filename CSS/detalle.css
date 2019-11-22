@@ -171,6 +171,11 @@ h3 {
   color: black;
 }
 
+.uk-button-default{
+  border: none;
+}
+
+
 .footer{
   /* height: 100px; */
   background-color: black;

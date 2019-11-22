@@ -185,7 +185,7 @@ window.onload = function(){
       })
       .then(function(myJson){
         var posterURL= 'https://image.tmdb.org/t/p/original'
-        var elementoHTML= document.querySelector('.rated')
+    
         console.log(myJson);
         var contenidoParaInsertar = ""
           if (myJson.results.length == 0 ) {
