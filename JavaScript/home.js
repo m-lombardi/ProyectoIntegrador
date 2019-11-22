@@ -39,7 +39,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
       myJson.results[i]
       // console.log ( myJson.results[i].name )
       // console.log (posterURL+myJson.results[i].poster_path)
-      // contenidoParaInsertar = 
+      // contenidoParaInsertar =
 
       contenidoParaInsertar = '<div class="uk-inline">'
       contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
@@ -150,35 +150,19 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
           }
 })
 
-  var formulario= document.querySelector("#ingresar")
-  var formulariousuario= document.querySelector("input.user")
-  var formulariocontra= document.querySelector("input.contra")
 
-  formulario.addEventListener('click',function (event){
-    var usuarioIncorrecto = false
-    var claveIncorrecta = false
+  document.querySelector("form#busqueda").onsubmit = function (event) {
 
-    if (formulariousuario.value.length == 0 ) {
-
-      usuarioIncorrecto= true
-      document.querySelector('p.error-userName').innerText = "Por favor, ingresar al menos un caracter para tu nombre!"
-    }
-
-    if (formulariocontra.value.length < 3 ) {
-
-      claveIncorrecta= true
-      document.querySelector('p.error-userPassword').innerText= "Por favor, ingresar al menos 3 caracteres!"
-
-    }
-
-    if (usuarioIncorrecto || claveIncorrecta) {
-      event.preventDefault();
-    }
-      else {
-        window.location.href="home.html" ;
-      //window.localStorage.setItem ("nombre", formulariousuario.value);
-    }
-  })
-
+  if(document.querySelector("input.buscadorsecundario").value.length < 3) {
+    event.preventDefault();
+  document.querySelector('.error').innerHTML += `<div class="uk-alert-danger notificacion" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>Al menos 3 letras.</p>
+</div>`
+setTimeout(function(){
+  document.querySelector('.notificacion').style.display = 'none'
+}, 3000)
+  }
+  }
 
 }

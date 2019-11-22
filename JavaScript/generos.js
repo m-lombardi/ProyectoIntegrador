@@ -1,4 +1,7 @@
 window.onload = function(){
+var query = new URLSearchParams(location.search)
+
+
       var ulGenero = document.querySelector('.miDropDown');
       console.log(ulGenero);
       var liAInsertar = "";
@@ -95,10 +98,44 @@ fetch ("https://api.themoviedb.org/3/discover/tv?api_key=0e65f11e4e58cb2a3044641
      //window.localStorage.setItem ("nombre", formulariousuario.value);
    }
  })
-  .catch(function(error){
-   console.log(error);
- })
 
+
+
+
+ var busqueda = query.get('busqueda')
+ console.log(busqueda);
+
+ fetch(`https://api.themoviedb.org/3/search/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US&query=`+ busqueda +`&page=1`)
+   .then(function(res) {
+     return res.json()
+   })
+   .then(function(myJson){
+     var posterURL= 'https://image.tmdb.org/t/p/original'
+
+     console.log(myJson);
+     var contenidoParaInsertar = ""
+       if (myJson.results.length == 0 ) {
+         //console.log("no hay resultados con " + busqueda);
+         var resultado = document.querySelector ('.resultado');
+         resultado.innerText = "No se han encontrado resultados para: " + busqueda
+       }else {
+
+
+     for (var i=0; i < myJson.results.length; i++){
+       //myJson.results[i]
+       // console.log ( myJson.results[i].name )
+       // console.log (posterURL+myJson.results[i].poster_path)
+       contenidoParaInsertar = '<li> <a href="detalle.html?id='+myJson.results[i].id+'">'
+       contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
+       contenidoParaInsertar += '<div class="uk-panel subtitulo2 "><h2>'+ myJson.results[i].name + '</h2></div>'
+       contenidoParaInsertar += '</a></li> '
+       elementoHTML.innerHTML += contenidoParaInsertar
+      }
+    }
+   })
+   .catch(function(error){
+     console.log(error);
+   })
 
 
 
