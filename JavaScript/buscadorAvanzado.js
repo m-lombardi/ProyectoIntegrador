@@ -124,10 +124,7 @@ for (var i = 0; i < 50; i++) {
       console.log(error);
     })
 
-    var btm= document.querySelector("#ingresar")
-    var generodeseado= document.querySelector("generodeseado")
-    var generonodeseado= document.querySelector("generonodeseado")
-    var sortclass= document.querySelector("sortclass")
+
 
     // formulario.addEventListener('click',function (event){
     //   var generodeseadoIncorrecto = false

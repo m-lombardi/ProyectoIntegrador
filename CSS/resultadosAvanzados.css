@@ -11,12 +11,13 @@ body{
 .main{
   height: 100%;
   padding-top: 140px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 6%;
 }
 
 .busq{
   font-size: 20px;
+  background-color: red;
 }
 
 .uk-slider-items img {
@@ -24,7 +25,7 @@ body{
     height: 100%;
   }
 
-  .scroll{
+.scroll{
     position: absolute;
     left: 72%;
     width: 20%;
@@ -37,39 +38,42 @@ body{
 
 
 .formu{
-  width: 100%;
+  margin-left: 6%;
+  width: 90%;
   height: 50%;
+  display: flex;
 }
 
 .opcGen{
   width:50%;
   height: 6%;
-  margin-bottom:1%;
+  margin-right:2%;
 }
 .opcNoGen{
   width: 50%;
   height: 6%;
-  margin-bottom: 1%;
+  margin-right:2%;
 }
 .sort_by{
   width:50%;
   height: 6%;
-  margin-bottom: 1%;
+  margin-right:2%;
 }
 .year{
   width:50%;
   height: 6%;
-  margin-bottom: 1%;
+  margin-right:2%;
 }
 .submit{
-  width:50%;
-  height: 6%;
-  margin-bottom: 1%;
+
+  margin-left: 3%;
+  border-radius: 35px;
+  border: 2px solid #F3C11C;
+  background-color: #F3C11C;
 }
 
 .carrousel{
-  height: 500px;
-  width: auto;
+  padding: 8%;
 }
 
 .rated{
@@ -79,7 +83,7 @@ body{
 .uk-slider-items img {
     width: 100%;
   }
-  .uk-card-default {
+.uk-card-default {
       font-family: sans-serif;
       line-height: 1.4;
       font-size: 13.4px;
