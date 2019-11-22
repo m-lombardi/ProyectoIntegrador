@@ -4,3 +4,9 @@
 .busq {
   font-size: 20px;
 }
+.main{
+  min-height: 600px;
+  padding-top: 140px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
