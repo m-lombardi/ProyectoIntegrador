@@ -51,36 +51,34 @@
       <a href="resultadosAvanzado.html">
       <button type="button" name="button" style="background-color:silver" class="busq">Buscador Avanzado</button>
       </a>
-      
+
       <div id="modal-close-default" uk-modal>
-          <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
-              <button class="uk-modal-close-default" type="button" uk-close></button>
-              <h2 class="uk-modal-title" style="color:white">Sign In</h2>
-              <form class="" action="index.html" method="post">
-                <form>
-                  <div class="uk-margin">
-                    <div class="uk-inline">
-                      <span class="uk-form-icon" uk-icon="icon: user"></span>
-                      <input class="uk-input" type="text" placeholder="Usuario">
-                    </div>
+        <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title" style="color:white">Sign In</h2>
+            <form class="form" action="index.html" method="post">
+              <form>
+                <div class="uk-margin">
+                  <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input user" type="text" placeholder="Usuario">
                   </div>
+                  <p class="error-userName"></p>
+                </div>
 
-                  <div class="uk-margin">
-                    <div class="uk-inline">
-                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                    <input class="uk-input" type="text" placeholder="Contraseña">
-                    </div>
+                <div class="uk-margin">
+                  <div class="uk-inline">
+                  <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                  <input class="uk-input contra" type="text" placeholder="Contraseña">
                   </div>
+                  <p class="error-userPassword"></p>
+                </div>
 
-                  <div class="uk-margin" uk-margin>
-                    <button class="uk-button uk-button-default" style="background-color:silver">Submit</button>
-                  </div>
+                <div class="uk-margin" uk-margin>
+                  <button class="uk-button uk-button-default" id="ingresar" style="background-color:silver">Submit</button>
+                </div>
 
-                  </div>
-
-                </form>
-              </form>
-              </div>
+                </div>
           </div>
       <div class="nombredegenero">
           <h1 id=tituloGenero> </h1>
