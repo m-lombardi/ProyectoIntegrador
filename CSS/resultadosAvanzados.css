@@ -29,7 +29,9 @@ body{
     left: 72%;
     width: 20%;
     margin: 60px;
-    background-color: white;
+    border-radius: 35px;
+    border: 2px solid #F3C11C;
+    background-color: gold;
     color: black;
   }
 
