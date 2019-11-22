@@ -116,6 +116,35 @@ window.onload = function(){
       // <li><a href="#"><img src="images/dark.jpg" width="100" alt=""></a></li>
     })
 
+    var formulario= document.querySelector("#ingresar")
+    var formulariousuario= document.querySelector("input.user")
+    var formulariocontra= document.querySelector("input.contra")
+
+    formulario.addEventListener('click',function (event){
+      var usuarioIncorrecto = false
+      var claveIncorrecta = false
+
+      if (formulariousuario.value.length == 0 ) {
+
+        usuarioIncorrecto= true
+        document.querySelector('p.error-userName').innerText = "Por favor, ingresar al menos un caracter para tu nombre!"
+      }
+
+      if (formulariocontra.value.length < 3 ) {
+
+        claveIncorrecta= true
+        document.querySelector('p.error-userPassword').innerText= "Por favor, ingresar al menos 3 caracteres!"
+
+      }
+
+      if (usuarioIncorrecto || claveIncorrecta) {
+        event.preventDefault();
+      }
+        else {
+          window.location.href="home.html" ;
+        //window.localStorage.setItem ("nombre", formulariousuario.value);
+      }
+    })
 
 
 
