@@ -146,9 +146,9 @@ window.onload = function(){
       }
     })
 
-    var formulario= document.querySelector("#ingresar")
-    var formulariousuario= document.querySelector("input.user")
-    var formulariocontra= document.querySelector("input.contra")
+var formulario= document.querySelector("#ingresar")
+var formulariousuario= document.querySelector("input.user")
+var formulariocontra= document.querySelector("input.contra")
 
     formulario.addEventListener('click',function (event){
       var usuarioIncorrecto = false
@@ -185,7 +185,7 @@ window.onload = function(){
       })
       .then(function(myJson){
         var posterURL= 'https://image.tmdb.org/t/p/original'
-    
+
         console.log(myJson);
         var contenidoParaInsertar = ""
           if (myJson.results.length == 0 ) {
