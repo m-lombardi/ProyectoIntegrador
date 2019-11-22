@@ -95,6 +95,30 @@ main{
     width: 100%;
   }
 
+  @media only screen and (max-width: 440px) {
+      .nav-right{
+        display: none;
+      }
+    .invisible {
+      display: block;
+
+
+    }
+  #altodelmenu {
+    height: auto;
+    width: auto;
+    right:8%;
+  }
+  .masinfo{
+    color: black;
+    margin-top: 50%;
+    text-align: center;
+    font-weight: bold;
+  }
+  .icon{
+    color:black;
+  }
+
 .titulo-popular{
     font-size: 1.5em;
     color: #e5e5e5;

@@ -46,10 +46,13 @@ window.onload = function () {
         //myJson.results[i]
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
-        contenidoParaInsertar = '<li> <a href="detalle.html?id='+myJson.results[i].id+'">'
+        contenidoParaInsertar = '<div class="uk-inline">'
+        contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
+        contenidoParaInsertar += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">'
         contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
+        contenidoParaInsertar += '<div class="uk-position-center"><span class="uk-transition-fade icon" uk-icon="icon: plus; ratio: 2"><p class="masinfo">INFO</p></span></div></div>'
         contenidoParaInsertar += '<div class="uk-panel subtitulo2 "><h2>'+ myJson.results[i].name + '</h2></div>'
-        contenidoParaInsertar += '</a></li> '
+        contenidoParaInsertar += '</li></a></div>'
         elementoHTML.innerHTML += contenidoParaInsertar
        }
      }

@@ -165,4 +165,5 @@ for (var i = 0; i < 50; i++) {
 
 
 
+
 // aca tenemos que hacer lo mismo que con el buscador simple pero el fetch va a tener muchos puntos distintos, no uno como el otro, entonces vamos a declarar muchas variables y completamos el html que va a tener el formulario con las cosas que queremos que pueda buscar el usuario

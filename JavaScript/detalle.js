@@ -175,6 +175,10 @@ window.onload = function(){
         //window.localStorage.setItem ("nombre", formulariousuario.value);
       }
     })
+
+    var busqueda = query.get('busqueda')
+    console.log(busqueda);
+
     fetch(`https://api.themoviedb.org/3/search/tv?api_key=0e65f11e4e58cb2a30446418b84e1eb4&language=en-US&query=`+ busqueda +`&page=1`)
       .then(function(res) {
         return res.json()
@@ -202,6 +206,9 @@ window.onload = function(){
           elementoHTML.innerHTML += contenidoParaInsertar
          }
        }
+      })
+      .catch(function(error){
+        console.log(error);
       })
 
 

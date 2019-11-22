@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cine Pop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -41,9 +42,65 @@
         <div class="login">
           <a href="#" uk-toggle="target: #modal-close-default" >LOGIN</a>
         </div>
-        <div class="profile">  <!--preguntar como desplegar perfiles-->
+
+        <!-- // boton menu media query -->
+
+          <button id="altodelmenu" class="uk-button uk-button-default invisible uk-position-right" type="button" uk-toggle="target: #offcanvas-flip">
+            <img style="width:2.2rem" src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png" alt="">
+          </button>
+
+        <div id="offcanvas-flip" class="" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <div class="login">
+                  <a href="#" uk-toggle="target: #modal-close-default" >LOGIN</a>
+                </div>
+
+              <div id="modal-close-default" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
+                      <button class="uk-modal-close-default" type="button" uk-close></button>
+                      <h2 class="uk-modal-title" style="color:white">Sign In</h2>
+                      <form class="" action="index.html" method="post">
+                          <div class="uk-margin">
+                            <div class="uk-inline">
+                              <span class="uk-form-icon" uk-icon="icon: user"></span>
+                              <input class="uk-input" type="text" placeholder="Usuario">
+                            </div>
+                          </div>
+
+                          <div class="uk-margin">
+                            <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                            <input class="uk-input" type="text" placeholder="Contraseña">
+                            </div>
+                          </div>
+
+                          <div class="uk-margin" uk-margin>
+                            <button class="uk-button uk-button-default" style="background-color:silver">Submit</button>
+                          </div>
+
+                      </form>
+                      </div>
+
+                <div class="nav-right">
+                  <div class="search">
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-default" action="resultadosSimples.html" method="get">
+                            <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                            <input class="uk-search-input" name="buscar" type="search" placeholder="Buscar...">
+                        </form>
+                    </div>
+
+
+
+            </div>
         </div>
       </div>
+      </div>
+    </div>
+        <!-- // termina menu media query -->
       </header>
 
     <main>
