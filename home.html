@@ -40,7 +40,7 @@
           <div class="uk-margin">
               <form class="uk-search uk-search-default" method="GET" action="resultadosSimples.html">
                   <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-                  <input name="busqueda" class="uk-search-input" type="search" placeholder="Buscar...">
+                  <input name="busqueda" class="uk-search-input" type="search" placeholder="Buscar..." value="">
               </form>
           </div>
         </div>
@@ -53,24 +53,26 @@
           <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
               <button class="uk-modal-close-default" type="button" uk-close></button>
               <h2 class="uk-modal-title" style="color:white">Sign In</h2>
-              <form class="" action="index.html" method="post">
+              <form class="form" action="index.html" method="post">
                 <form>
                   <div class="uk-margin">
                     <div class="uk-inline">
                       <span class="uk-form-icon" uk-icon="icon: user"></span>
-                      <input class="uk-input" type="text" placeholder="Usuario">
+                      <input class="uk-input user" type="text" placeholder="Usuario">
                     </div>
+                    <p class="error-userName"></p>
                   </div>
 
                   <div class="uk-margin">
                     <div class="uk-inline">
                     <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                    <input class="uk-input" type="text" placeholder="Contraseña">
+                    <input class="uk-input contra" type="text" placeholder="Contraseña">
                     </div>
+                    <p class="error-userPassword"></p>
                   </div>
 
                   <div class="uk-margin" uk-margin>
-                    <button class="uk-button uk-button-default" style="background-color:silver">Submit</button>
+                    <button class="uk-button uk-button-default" id="ingresar" style="background-color:silver">Submit</button>
                   </div>
 
                   </div>
@@ -127,7 +129,7 @@
                       <div class="uk-margin">
                           <form class="uk-search uk-search-default">
                               <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-                              <input class="uk-search-input" type="search" placeholder="Buscar...">
+                              <input class="uk-search-input" type="search"  placeholder="Buscar..." >
                           </form>
                       </div>
 

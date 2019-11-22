@@ -73,6 +73,7 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         myJson.results[i]
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
+<<<<<<< HEAD
         contenidoParaInsertar = '<div class="uk-inline">'
         contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
         contenidoParaInsertar += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">'
@@ -80,6 +81,13 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         contenidoParaInsertar += '<div class="uk-position-center"><span class="uk-transition-fade icon" uk-icon="icon: plus; ratio: 2"> <p class="masinfo">INFO</p></span></div></div>'
         contenidoParaInsertar += '<div class="uk-panel subtitulo2"><h2>'+ myJson.results[i].name + '</h2></div>'
         contenidoParaInsertar += '</li></a> </div>'
+=======
+        contenidoParaInsertar = '<li >'
+        contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'">'
+        contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
+        contenidoParaInsertar += '<div class="uk-panel subtitulo2 "><h2>'+ myJson.results[i].name + '</h2></div>'
+        contenidoParaInsertar += '</li>'
+>>>>>>> master
         elementoHTML.innerHTML += contenidoParaInsertar
        }
 
@@ -104,11 +112,17 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
         myJson.results[i]
         // console.log ( myJson.results[i].name )
         // console.log (posterURL+myJson.results[i].poster_path)
+<<<<<<< HEAD
         contenidoParaInsertar = '<div class="uk-inline">'
         contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'"><li>'
         contenidoParaInsertar += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">'
         contenidoParaInsertar += '<img src="'+ posterURL+ myJson.results[i].poster_path + '" alt="">'
         contenidoParaInsertar += '<div class="uk-position-center"><span class="uk-transition-fade icon" uk-icon="icon: plus; ratio: 2"> <p class="masinfo">INFO</p></span></div></div>'
+=======
+        contenidoParaInsertar = '<li >'
+        contenidoParaInsertar += '<a href="detalle.html?id='+myJson.results[i].id+'">'
+        contenidoParaInsertar += '<img class="uk-height-small" src="'+ posterURL+ myJson.results[i].backdrop_path + '" alt="">'
+>>>>>>> master
         contenidoParaInsertar += '<div class="uk-panel subtitulo3"><h2>'+ myJson.results[i].name + '</h2></div>'
         contenidoParaInsertar += '</li></a> </div>'
         elementoHTML.innerHTML += contenidoParaInsertar
@@ -136,6 +150,35 @@ fetch ("https://api.themoviedb.org/3/tv/popular?api_key=0e65f11e4e58cb2a30446418
           }
 })
 
+  var formulario= document.querySelector("#ingresar")
+  var formulariousuario= document.querySelector("input.user")
+  var formulariocontra= document.querySelector("input.contra")
+
+  formulario.addEventListener('click',function (event){
+    var usuarioIncorrecto = false
+    var claveIncorrecta = false
+
+    if (formulariousuario.value.length == 0 ) {
+
+      usuarioIncorrecto= true
+      document.querySelector('p.error-userName').innerText = "Por favor, ingresar al menos un caracter para tu nombre!"
+    }
+
+    if (formulariocontra.value.length < 3 ) {
+
+      claveIncorrecta= true
+      document.querySelector('p.error-userPassword').innerText= "Por favor, ingresar al menos 3 caracteres!"
+
+    }
+
+    if (usuarioIncorrecto || claveIncorrecta) {
+      event.preventDefault();
+    }
+      else {
+        window.location.href="home.html" ;
+      //window.localStorage.setItem ("nombre", formulariousuario.value);
+    }
+  })
 
 
 }
