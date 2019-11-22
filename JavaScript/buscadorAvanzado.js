@@ -151,7 +151,7 @@ for (var i = 0; i < 50; i++) {
       if (myJson.results.length == 0) {
 
         var resultado = document.querySelector ('.resultadosAvanzado');
-        resultado.innerText = "No se han encontrado resultados para su busqueda "
+        resultado.innerText = "No se han encontrado resultados para su busqueda, intenta con otra! "
       }else {
 
       for (var i=0; i < myJson.results.length; i++){
@@ -164,8 +164,10 @@ for (var i = 0; i < 50; i++) {
 
       contenidoAInsertar = '<div class="uk-inline">'
       contenidoAInsertar +='<li class= "resultseries"><a href="detalle.html?id=' + myJson.results[i].id +'">'
+      contenidoAInsertar += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">'
       contenidoAInsertar += '<img class="uk-height-small" src="' + posterURL + myJson.results [i].backdrop_path + '" alt="">'
-      contenidoAInsertar += '<div> <h2>' + myJson.results [i].name + '</h2></div>'
+      contenidoAInsertar += '<div class="uk-position-center"><span class="uk-transition-fade icon" uk-icon="icon: plus; ratio: 2"><p class="masinfo">INFO</p></span></div></div>'
+      contenidoAInsertar += '<div class="uk-panel subtitulo> <h2>' + myJson.results [i].name + '</h2></div>'
       contenidoAInsertar += '</a></li></div>'
       elementos.innerHTML += contenidoAInsertar
 

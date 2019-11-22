@@ -160,6 +160,16 @@ h3 {
   background-color: #F3C11C;
 
 }
+.scroll{
+  position: absolute;
+  left: 60%;
+  width: 20%;
+  margin: 60px;
+  border-radius: 35px;
+  border: 2px solid #F3C11C;
+  background-color: #F3C11C;
+  color: black;
+}
 
 .footer{
   /* height: 100px; */
