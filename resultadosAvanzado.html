@@ -147,16 +147,16 @@
         <p class="resultadosAvanzado"></p>
       <form class="uk-search uk-search-default formu" method="GET" action="resultadosAvanzado.html">
 
-          <select class="opcGen" name="with_genres">
-            <option value="with_genres" disabled selected>Género incluído</option>
+          <select class="opcGen generodeseado" name="with_genres">
+            <option value="with_genres" disabled selected>Género deseado</option>
 
           </select>
 
-          <select class="opcNoGen" name="without_genres" placeholder= "Género no incluído">
-            <option value="without_genres" disabled selected>Género no incluído</option>
+          <select class="opcNoGen generonodeseado" name="without_genres" placeholder= "Género no incluído">
+            <option value="without_genres" disabled selected>Género no deseado</option>
           </select>
 
-          <select class="sort_by" name="sort_by" placeholder= "Sort by...">
+          <select class="sort_by sortclass" name="sort_by" placeholder= "Sort by...">
             <option value="sort" disabled selected>Sort by</option>
             <option value="popularity.asc">Most popular</option>
             <option value="popularity.desc">Less popular</option>
@@ -171,7 +171,7 @@
 
           </select>
 
-          <button type="submit"  name="" class="submit">Send</button>
+          <button type="submit"  name="" class="submit" id="ingresar" >Send</button>
       </form>
 
       <div class="uk-position-relative uk-visible-toggle uk-light carrousel" tabindex="-1" uk-slider="sets: true">

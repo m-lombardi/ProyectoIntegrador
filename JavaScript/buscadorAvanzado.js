@@ -151,7 +151,7 @@ for (var i = 0; i < 50; i++) {
       if (myJson.results.length == 0) {
 
         var resultado = document.querySelector ('.resultadosAvanzado');
-        resultado.innerText = "No se han encontrado resultados para su busqueda, intenta con otra! "
+        //resultado.innerText = "No se han encontrado resultados para su busqueda, intenta con otra! "
       }else {
 
       for (var i=0; i < myJson.results.length; i++){
@@ -192,7 +192,36 @@ for (var i = 0; i < 50; i++) {
       console.log(error);
     })
 
+    var btm= document.querySelector("#ingresar")
+    var generodeseado= document.querySelector("generodeseado")
+    var generonodeseado= document.querySelector("generonodeseado")
+    var sortclass= document.querySelector("sortclass")
 
+    // formulario.addEventListener('click',function (event){
+    //   var generodeseadoIncorrecto = false
+    //   var claveIncorrecta = false
+    //
+    //   if (formulariousuario.value.length == 0 ) {
+    //
+    //     usuarioIncorrecto= true
+    //     document.querySelector('p.error-userName').innerText = "Por favor, ingresar al menos un caracter para tu nombre!"
+    //   }
+    //
+    //   if (formulariocontra.value.length < 3 ) {
+    //
+    //     claveIncorrecta= true
+    //     document.querySelector('p.error-userPassword').innerText= "Por favor, ingresar al menos 3 caracteres!"
+    //
+    //   }
+    //
+    //   if (usuarioIncorrecto || claveIncorrecta) {
+    //     event.preventDefault();
+    //   }
+    //     else {
+    //       window.location.href="home.html" ;
+    //     //window.localStorage.setItem ("nombre", formulariousuario.value);
+    //   }
+  //  })
 
 
 
