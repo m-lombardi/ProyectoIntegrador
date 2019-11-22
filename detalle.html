@@ -80,15 +80,14 @@
           </div>
           <!-- // boton menu media query -->
 
-            <button id="altodelmenu" class="uk-button uk-button-default invisible uk-position-right" type="button" uk-toggle="target: #offcanvas-flip">
-              <img style="width:2.2rem" src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png" alt="">
-            </button>
+          <button id="altodelmenu" class="uk-button uk-button-default invisible uk-position-right" type="button" uk-toggle="target: #offcanvas-flip" style="z-index: 1">
+            <span class="iconmenu"uk-icon="menu"></span>
+          </button>
 
           <div id="offcanvas-flip" class="" uk-offcanvas="flip: true; overlay: true">
               <div class="uk-offcanvas-bar">
 
                   <button class="uk-offcanvas-close" type="button" uk-close></button>
-
 
                   <div class="login">
                     <a href="#" uk-toggle="target: #modal-close-default" >LOGIN</a>
@@ -129,7 +128,7 @@
                       <div class="uk-margin">
                           <form class="uk-search uk-search-default">
                               <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-                              <input class="uk-search-input" type="search" placeholder="Buscar...">
+                              <input class="uk-search-input" type="search"  placeholder="Buscar..." >
                           </form>
                       </div>
 

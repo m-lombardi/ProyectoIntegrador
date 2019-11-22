@@ -209,14 +209,14 @@ main{
 
 
   }
-#altodelmenu {
-  height: auto;
-  width: auto;
-  right:8%;
-}
-.iconmenu{
-  color:white;
-}
+  #altodelmenu {
+    height: auto;
+    width: auto;
+    right:8%;
+  }
+  .iconmenu{
+    color:white;
+  }
 
 
 .loguito{

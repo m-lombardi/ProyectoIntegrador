@@ -48,24 +48,28 @@ body{
   width:50%;
   height: 6%;
   margin-right:2%;
+  font-size: 20px;
 }
 .opcNoGen{
   width: 50%;
   height: 6%;
   margin-right:2%;
+  font-size: 20px;
 }
 .sort_by{
   width:50%;
   height: 6%;
   margin-right:2%;
+  font-size: 20px;
 }
 .year{
   width:50%;
   height: 6%;
   margin-right:2%;
+  font-size: 20px;
 }
 .submit{
-
+  font-size: 25px;
   margin-left: 3%;
   border-radius: 35px;
   border: 2px solid #F3C11C;
@@ -106,3 +110,20 @@ body{
   height: 305px;
   margin-bottom: 20px;
 }  */
+@media only screen and (max-width: 440px) {
+    .nav-right{
+      display: none;
+    }
+  .invisible {
+    display: block;
+
+
+  }
+  #altodelmenu {
+    height: auto;
+    width: auto;
+    right:8%;
+  }
+  .iconmenu{
+    color:white;
+  }

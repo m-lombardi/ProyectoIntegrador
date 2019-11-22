@@ -132,7 +132,9 @@ main{
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
+.busq{
+  font-size: 20px;
+}
 .scroll{
   position: absolute;
   left: 1200px;
@@ -175,3 +177,20 @@ main{
   left: 1000px;
   padding: 70px;
 }
+@media only screen and (max-width: 440px) {
+    .nav-right{
+      display: none;
+    }
+  .invisible {
+    display: block;
+
+
+  }
+  #altodelmenu {
+    height: auto;
+    width: auto;
+    right:8%;
+  }
+  .iconmenu{
+    color:white;
+  }
