@@ -217,15 +217,22 @@ h3 {
 
 
 @media only screen and (max-width: 440px) {
-
+    .nav-right{
+      display: none;
+    }
   .invisible {
     display: block;
 
-  }
-#altodelmenu {
-  height: auto;
-}
 
+  }
+  #altodelmenu {
+    height: auto;
+    width: auto;
+    right:8%;
+  }
+  .iconmenu{
+    color:white;
+  }
 .loguito{
   width: 100px;
 }
